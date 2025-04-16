@@ -7,19 +7,20 @@
   "author": "Microsoft",
   "scripts": {
     "start": "node index.js",
-    "lint": "eslint .",
-    "format": "prettier --single-quote --write \"*.js\""
+    "lint": "eslint",
+    "format": "prettier --single-quote --write *.js",
+    "build": "echo \"No build step necessary\""
   },
-  "engines": {
-    "node": ">=14.0.0"
+  "devDependencies": {
+    "eslint": "^7.5.0",
+    "prettier": "^2.0.5"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1"
   },
-  "devDependencies": {
-    "eslint": "^7.5.0",
-    "prettier": "^2.0.5"
+  "engines": {
+    "node": ">=10"
   }
 }
